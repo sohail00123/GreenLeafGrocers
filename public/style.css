@@ -1,0 +1,154 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f7fb;
+    color: #2c3e50;
+  }
+  
+  h1, h2 {
+    color: #2c3e50;
+    text-align: center;
+  }
+  
+  /* Form Styles */
+  form {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input, button {
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  input:focus, button:focus {
+    outline: none;
+    border-color: #2ecc71;
+  }
+  
+  input {
+    background-color: #fff;
+  }
+  
+  button {
+    background-color: #2ecc71;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  td {
+    background-color: #fff;
+  }
+  
+  tr:hover {
+    background-color: #ecf0f1;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+  
+  /* Button Styles for Table Actions */
+  button.edit-btn, button.delete-btn {
+    padding: 6px 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 3px;
+    font-size: 14px;
+  }
+  
+  button.edit-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  button.delete-btn {
+    background-color: #e74c3c;
+  }
+  
+  button.delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    h1, h2 {
+      font-size: 1.5em;
+    }
+  
+    input, button {
+      max-width: 90%;
+    }
+  
+    table {
+      font-size: 14px;
+    }
+  
+    th, td {
+      padding: 8px;
+    }
+  
+    button {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    table {
+      font-size: 12px;
+    }
+  
+    th, td {
+      padding: 6px;
+    }
+  
+    button {
+      padding: 8px;
+    }
+  
+    button.edit-btn, button.delete-btn {
+      font-size: 12px;
+    }
+  }
